@@ -7,18 +7,28 @@ function One() {
 }
 
 var Two = function () {
-	return(
+	return (
 		<div>
 			Cách số 2
 		</div>
 	);
-}
+};
 
 var Three = () => (
 	<div>
 		Cách số 3
 	</div>
 );
+
+ class Four extends Component {
+	 render() {
+	 	return(
+	 		<div>
+			   Cách số 4
+		   </div>
+	   );
+	 }
+ }
 
 class App extends Component {
 	render() {
@@ -29,6 +39,7 @@ class App extends Component {
 					<One/>
 					<Two/>
 					<Three/>
+					<Four/>
 					<p>
 						Edit <code>src/App.js</code> and save to reload.
 					</p>
