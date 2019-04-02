@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const a1 = "Hải";
+
 function One() {
 	return <div>Cach so 1</div>;
 }
@@ -52,12 +54,24 @@ class NumberTwo extends Component {
 	}
 }
 
+class App1 extends Component {
+	render() {
+		return (
+			<div>
+				<h3>Tên tôi là: {a1}</h3>
+			</div>
+		);
+	}
+}
+
+
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo"/>
+					<App1/>
 					<One/>
 					<Two/>
 					<Three/>
