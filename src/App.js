@@ -40,6 +40,18 @@ function NumberOne(props) {
    );
 }
 
+// Cách 2 sử dụng Class để định nghĩa và thao tác với props
+class NumberTwo extends Component {
+	render() {
+		return (
+			<div>
+				<img src={this.props.src} alt=""/>
+				<h3>{this.props.tieude}</h3>
+			</div>
+		);
+	}
+}
+
 class App extends Component {
 	render() {
 		return (
@@ -51,6 +63,7 @@ class App extends Component {
 					<Three/>
 					<Four/>
 					<NumberOne tieude="Sản phẩm 1" src="https://znews-photo.zadn.vn/w480/Uploaded/iutmtn/2019_04_02/dung121549295709width2000height1506_thumb.jpg"/>
+					<NumberTwo tieude="Yêu cầu YouTube hạ kênh của Khá Bảnh" src="https://znews-photo.zadn.vn/w660/Uploaded/jopltui/2019_04_02/Kha_banh.jpg"/>
 					<p>
 						Edit <code>src/App.js</code> and save to reload.
 					</p>
