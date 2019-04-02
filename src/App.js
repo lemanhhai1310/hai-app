@@ -30,6 +30,16 @@ var Three = () => (
 	 }
  }
 
+// Sử dụng Props cách 1
+function NumberOne(props) {
+ 	return(
+ 		<div>
+		   <h3>{props.tieude}</h3>
+		   <img src={props.src} alt=""/>
+	   </div>
+   );
+}
+
 class App extends Component {
 	render() {
 		return (
@@ -40,6 +50,7 @@ class App extends Component {
 					<Two/>
 					<Three/>
 					<Four/>
+					<NumberOne tieude="Sản phẩm 1" src="https://znews-photo.zadn.vn/w480/Uploaded/iutmtn/2019_04_02/dung121549295709width2000height1506_thumb.jpg"/>
 					<p>
 						Edit <code>src/App.js</code> and save to reload.
 					</p>
