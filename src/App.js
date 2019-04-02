@@ -64,6 +64,24 @@ class App1 extends Component {
 	}
 }
 
+// Ví dụ về hàm map
+const so = [1,2,3,4,5,6];
+const so2 = so.map((x) => x*2+",");
+const so3 = so.map((x) => (
+	<li>Số: {x}</li>
+));
+
+class App2 extends Component {
+	render() {
+		return (
+			<ul>
+				{so2}
+				{so3}
+			</ul>
+		);
+	}
+}
+
 
 class App extends Component {
 	render() {
@@ -71,6 +89,7 @@ class App extends Component {
 			<div className="App">
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo"/>
+					<App2/>
 					<App1/>
 					<One/>
 					<Two/>
