@@ -4,12 +4,17 @@ class Content extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			status: true
+			status: true,
+			trangthai: 'khoitao',
 		}
 	}
 
 	componentWillMount() {
+		console.log('ComponentWilmount đang chạy');
+	}
 
+	componentDidMount() {
+		console.log('ComponentDidmount đã chạy rồi');
 	}
 
 
