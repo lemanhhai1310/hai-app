@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Noidung from "./Noidung";
 
 class Content extends Component {
 	constructor(props){
@@ -89,7 +90,10 @@ class Content extends Component {
 						<h3 className="uk-card-title"><a className="uk-link-reset" href="#">{this.props.title}</a></h3>
 						<p>{this.props.desc}</p>
 						{this.iCheck()}
-						<button type="button" className="uk-button uk-button-primary" onClick={() => this.capNhatState()}>Update State</button>
+						<div className="uk-margin">
+							<button type="button" className="uk-button uk-button-primary" onClick={() => this.capNhatState()}>Update State</button>
+						</div>
+						<Noidung ten={this.state.trangthai}/>
 					</div>
 				</div>
 			</div>
