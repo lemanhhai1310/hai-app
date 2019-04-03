@@ -26,7 +26,7 @@ class Content extends Component {
 		return(
 			<form className="uk-grid-small uk-grid-collapse box_register uk-grid" uk-grid="">
 				<div className="uk-width-expand uk-first-column">
-					<input defaultValue={this.props.title} className="uk-input" type="text" placeholder=""/>
+					<input ref={(data) => {this.tmp = data}} defaultValue={this.props.title} className="uk-input" type="text" placeholder=""/>
 				</div>
 				<div className="uk-width-auto">
 					<button type="button" className="uk-button uk-button-danger" onClick={() => this.saveClick()}>Save</button>
@@ -36,7 +36,7 @@ class Content extends Component {
 	}
 
 	saveClick = () => {
-
+		console.log(this.tmp.value);
 	}
 
 	editClick = () => {
