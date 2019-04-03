@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 class Content extends Component {
 	constructor(props){
 		super(props);
+		this.state = {
+			status: true
+		}
 	}
 
 	thongbao = () => {
