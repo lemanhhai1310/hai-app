@@ -1,91 +1,19 @@
 import React, {Component} from 'react';
 import TopMenu from "./Component/TopMenu";
-
-const a1 = "Hải";
-
-function One() {
-	return <div>Cach so 1</div>;
-}
-
-var Two = function () {
-	return (
-		<div>
-			Cách số 2
-		</div>
-	);
-};
-
-var Three = () => (
-	<div>
-		Cách số 3
-	</div>
-);
-
- class Four extends Component {
-	 render() {
-	 	return(
-	 		<div>
-			   Cách số 4
-		   </div>
-	   );
-	 }
- }
-
-// Sử dụng Props cách 1
-function NumberOne(props) {
- 	return(
- 		<div>
-		   <h3>{props.tieude}</h3>
-		   <img src={props.src} alt=""/>
-	   </div>
-   );
-}
-
-// Cách 2 sử dụng Class để định nghĩa và thao tác với props
-class NumberTwo extends Component {
-	render() {
-		return (
-			<div>
-				<img src={this.props.src} alt=""/>
-				<h3>{this.props.tieude}</h3>
-			</div>
-		);
-	}
-}
-
-class App1 extends Component {
-	render() {
-		return (
-			<div>
-				<h3>Tên tôi là: {a1}</h3>
-			</div>
-		);
-	}
-}
-
-// Ví dụ về hàm map
-const so = [1,2,3,4,5,6];
-const so2 = so.map((x) => x*2+",");
-const so3 = so.map((x) => (
-	<li>Số: {x}</li>
-));
-
-class App2 extends Component {
-	render() {
-		return (
-			<ul>
-				{so2}
-				{so3}
-			</ul>
-		);
-	}
-}
+import Slider from "./Component/Slider";
+import Content from "./Component/Content";
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
 				<TopMenu/>
+				<Slider/>
+				<div className="uk-section-small">
+					<div className="uk-container">
+						<Content/>
+					</div>
+				</div>
 			</div>
 		);
 	}
