@@ -11,7 +11,7 @@ class Content extends Component {
 	renderButton = () => {
 		return(
 			<div>
-				<button className="uk-button uk-button-default">Edit</button>
+				<button className="uk-button uk-button-default" onClick={() => this.editClick()}>Edit</button>
 				<button className="uk-button uk-button-secondary">Remove</button>
 			</div>
 		);
@@ -28,6 +28,10 @@ class Content extends Component {
 				</div>
 			</form>
 		);
+	}
+
+	editClick = () => {
+		this.setState({status: false})
 	}
 
 	iCheck = () => {
