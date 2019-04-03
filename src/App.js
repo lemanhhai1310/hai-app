@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import TopMenu from "./Component/TopMenu";
 
 const a1 = "Hải";
 
@@ -81,38 +81,11 @@ class App2 extends Component {
 	}
 }
 
-
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<header className="App-header">
-					<App2/>
-					<App1/>
-					<One/>
-					<Two/>
-					<Three/>
-					<Four/>
-					<NumberOne
-						tieude="Sản phẩm 1"
-						src="https://znews-photo.zadn.vn/w480/Uploaded/iutmtn/2019_04_02/dung121549295709width2000height1506_thumb.jpg"
-					/>
-					<NumberTwo
-						tieude="Yêu cầu YouTube hạ kênh của Khá Bảnh"
-						src="https://znews-photo.zadn.vn/w660/Uploaded/jopltui/2019_04_02/Kha_banh.jpg"
-					/>
-					<p>
-						Edit <code>src/App.js</code> and save to reload.
-					</p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Learn React
-					</a>
-				</header>
+				<TopMenu/>
 			</div>
 		);
 	}
