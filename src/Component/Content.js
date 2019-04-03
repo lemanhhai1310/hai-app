@@ -17,6 +17,19 @@ class Content extends Component {
 		console.log('ComponentDidmount đã chạy rồi');
 	}
 
+	shouldComponentUpdate(nextProps, nextState, nextContext) {
+		console.log('shouldComponentUpdate đã chạy rồi');
+		return true;
+	}
+
+	componentWillUpdate(nextProps, nextState, nextContext) {
+		console.log('componentWillUpdate đã chạy rồi');
+	}
+
+	componentDidUpdate(prevProps, prevState, snapshot) {
+		console.log('componentDidUpdate đã chạy rồi');
+	}
+
 
 	renderButton = () => {
 		return(
@@ -56,7 +69,15 @@ class Content extends Component {
 		}
 	}
 
+	capNhatState = () => {
+		this.setState({
+			trangthai: "trạng thái được update"
+		})
+	}
+
 	render() {
+		console.log('Đây là hàm render đã chạy');
+		console.log(this.state.trangthai);
 		return (
 			<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid="">
 				<div className={"uk-card-media-left uk-cover-container " + this.props.location}>
@@ -68,6 +89,7 @@ class Content extends Component {
 						<h3 className="uk-card-title"><a className="uk-link-reset" href="#">{this.props.title}</a></h3>
 						<p>{this.props.desc}</p>
 						{this.iCheck()}
+						<button type="button" className="uk-button uk-button-primary" onClick={() => this.capNhatState()}>Update State</button>
 					</div>
 				</div>
 			</div>
