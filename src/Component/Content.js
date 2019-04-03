@@ -8,6 +8,11 @@ class Content extends Component {
 		}
 	}
 
+	componentWillMount() {
+
+	}
+
+
 	renderButton = () => {
 		return(
 			<div>
