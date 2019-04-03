@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
 
 class Content extends Component {
+	constructor(props){
+		super(props);
+	}
+
+	thongbao = () => {
+		alert('Cách xử lý tương tác trong ReactJS');
+	}
+
 	render() {
 		return (
 			<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid="">
@@ -12,6 +20,8 @@ class Content extends Component {
 					<div className="uk-card-body">
 						<h3 className="uk-card-title"><a className="uk-link-reset" href="#">{this.props.title}</a></h3>
 						<p>{this.props.desc}</p>
+						<button className="uk-button uk-button-default" onClick={this.thongbao}>Edit</button>
+						<button className="uk-button uk-button-secondary">Remove</button>
 					</div>
 				</div>
 			</div>
