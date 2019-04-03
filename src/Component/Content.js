@@ -9,6 +9,10 @@ class Content extends Component {
 		alert('Cách xử lý tương tác trong ReactJS');
 	}
 
+	thongbao1 = (x) => {
+		alert(x);
+	}
+
 	render() {
 		return (
 			<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid="">
@@ -21,7 +25,7 @@ class Content extends Component {
 						<h3 className="uk-card-title"><a className="uk-link-reset" href="#">{this.props.title}</a></h3>
 						<p>{this.props.desc}</p>
 						<button className="uk-button uk-button-default" onClick={this.thongbao}>Edit</button>
-						<button className="uk-button uk-button-secondary">Remove</button>
+						<button className="uk-button uk-button-secondary" onClick={() => this.thongbao1("haha")}>Remove</button>
 					</div>
 				</div>
 			</div>
