@@ -21,13 +21,17 @@ class Content extends Component {
 		return(
 			<form className="uk-grid-small uk-grid-collapse box_register uk-grid" uk-grid="">
 				<div className="uk-width-expand uk-first-column">
-					<input className="uk-input" type="text" placeholder=""/>
+					<input defaultValue={this.props.title} className="uk-input" type="text" placeholder=""/>
 				</div>
 				<div className="uk-width-auto">
-					<button type="submit" className="uk-button uk-button-danger">Save</button>
+					<button type="button" className="uk-button uk-button-danger" onClick={() => this.saveClick()}>Save</button>
 				</div>
 			</form>
 		);
+	}
+
+	saveClick = () => {
+
 	}
 
 	editClick = () => {
