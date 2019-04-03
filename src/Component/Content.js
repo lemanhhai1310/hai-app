@@ -8,12 +8,34 @@ class Content extends Component {
 		}
 	}
 
-	thongbao = () => {
-		alert('Cách xử lý tương tác trong ReactJS');
+	renderButton = () => {
+		return(
+			<div>
+				<button className="uk-button uk-button-default">Edit</button>
+				<button className="uk-button uk-button-secondary">Remove</button>
+			</div>
+		);
 	}
 
-	thongbao1 = (x) => {
-		alert(x);
+	renderForm = () => {
+		return(
+			<form className="uk-grid-small uk-grid-collapse box_register uk-grid" uk-grid="">
+				<div className="uk-width-expand uk-first-column">
+					<input className="uk-input" type="text" placeholder=""/>
+				</div>
+				<div className="uk-width-auto">
+					<button type="submit" className="uk-button uk-button-danger">Save</button>
+				</div>
+			</form>
+		);
+	}
+
+	iCheck = () => {
+		if (this.state.status){
+			return this.renderButton();
+		}else {
+			return this.renderForm();
+		}
 	}
 
 	render() {
@@ -27,8 +49,7 @@ class Content extends Component {
 					<div className="uk-card-body">
 						<h3 className="uk-card-title"><a className="uk-link-reset" href="#">{this.props.title}</a></h3>
 						<p>{this.props.desc}</p>
-						<button className="uk-button uk-button-default" onClick={this.thongbao}>Edit</button>
-						<button className="uk-button uk-button-secondary" onClick={() => this.thongbao1("haha")}>Remove</button>
+						{this.iCheck()}
 					</div>
 				</div>
 			</div>
