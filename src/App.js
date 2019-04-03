@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 const a1 = "Hải";
@@ -88,15 +87,20 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo"/>
 					<App2/>
 					<App1/>
 					<One/>
 					<Two/>
 					<Three/>
 					<Four/>
-					<NumberOne tieude="Sản phẩm 1" src="https://znews-photo.zadn.vn/w480/Uploaded/iutmtn/2019_04_02/dung121549295709width2000height1506_thumb.jpg"/>
-					<NumberTwo tieude="Yêu cầu YouTube hạ kênh của Khá Bảnh" src="https://znews-photo.zadn.vn/w660/Uploaded/jopltui/2019_04_02/Kha_banh.jpg"/>
+					<NumberOne
+						tieude="Sản phẩm 1"
+						src="https://znews-photo.zadn.vn/w480/Uploaded/iutmtn/2019_04_02/dung121549295709width2000height1506_thumb.jpg"
+					/>
+					<NumberTwo
+						tieude="Yêu cầu YouTube hạ kênh của Khá Bảnh"
+						src="https://znews-photo.zadn.vn/w660/Uploaded/jopltui/2019_04_02/Kha_banh.jpg"
+					/>
 					<p>
 						Edit <code>src/App.js</code> and save to reload.
 					</p>
