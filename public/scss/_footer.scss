@@ -1,0 +1,26 @@
+#footer{
+  background-color: #f9f9f9;
+}
+.logo_f{
+  img{
+    height: 46px;
+  }
+}
+.title_f{
+  color: #17479b;
+  font-size: 16px;
+  font-weight: 500;
+  font-family:'SanFranciscoText-Regular';
+  margin-bottom: 3px;
+  .hotline &{
+    color: #333333;
+    span{
+      color: #f20022;
+    }
+  }
+}
+.social_f{
+  a{
+    color: #333333;
+  }
+}

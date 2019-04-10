@@ -1,0 +1,116 @@
+#menu_link_slide{
+  bottom: 41px;
+  .uk-navbar-nav{
+    >li{
+      margin-right: 20px;
+      &.uk-active{
+        >a{
+          &:before{
+            height: 2px;
+          }
+        }
+      }
+      >a{
+        color: #FFFFFF;
+        font-family:'SanFranciscoText-Regular';
+        font-size: 15px;
+        position: relative;
+        padding-left: 0;
+        &:hover{
+          &:before{
+            height: 2px;
+          }
+        }
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0px;
+          right: 0;
+          bottom: 25px;
+          height: 1px;
+          background-color: #FFFFFF;
+          transition: .3s ease-in-out;
+          transition-property: right;
+        }
+      }
+    }
+  }
+}
+.uk-dotnav{
+  #slider_home &{
+    margin-left: 0;
+    margin-bottom: 67px;
+    @media(min-width: 960px){
+      margin-bottom: 67px;
+    }
+  }
+  li{
+    #slider_home &{
+      padding: 0;
+      background-color: rgba(255, 255, 255, 0.4) !important;
+    }
+    &.uk-active{
+      #slider_home &{
+        background-color: rgba(255, 255, 255, 1) !important;
+      }
+      a{
+        #slider_home &{
+          background-color: rgba(255, 255, 255, 1) !important;
+        }
+      }
+    }
+    a{
+      #slider_home &{
+        width: 40px;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        border: none !important;
+      }
+    }
+  }
+}
+.title_slide_h{
+  font-family:'SanFranciscoDisplay-Regular';
+  font-weight: 500;
+  @media(min-width: 960px){
+    font-size: 50px;
+  }
+  .uk-blue &{
+    color: #17479b;
+  }
+}
+.btn_slide_h{
+  //text-transform: inherit;
+  color: #17479b !important;
+  font-weight: 300;
+  font-family:'SanFranciscoDisplay-Regular';
+  .uk-blue &{
+    background-color: #17479b;
+    border-color: #17479b;
+    color: #FFFFFF !important;
+  }
+}
+.title_partner{
+  font-family:'SanFranciscoText-Regular';
+  color: #333333;
+  font-size: 22px;
+}
+#slider_brand{
+  img{
+    transform: scale(0.9);
+  }
+}
+.box_register{
+  .uk-input{
+    color: #6f6f6f;
+    border-color: #333333;
+    &::placeholder{
+      color: #6f6f6f;
+    }
+  }
+  .uk-button-primary{
+    background-color: #17479b;
+    border-color: #17479b;
+  }
+}
