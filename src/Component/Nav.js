@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import MenuMobile from "./MenuMobile";
+import '.././Css/Nav.css';
 
 class Nav extends Component {
 	render() {
 		return (
-			<header id="header" className="uk-position-top uk-position-z-index uk-width-1-1" uk-sticky="">
+			<header id="header" className="uk-position-z-index uk-width-1-1" uk-sticky="">
 				<div className="uk-container uk-container-large">
 					<nav className="uk-navbar-container uk-navbar-transparent uk-navbar uk-flex-between" uk-navbar="">
 						<div className="uk-navbar-left">
-							<a className="uk-navbar-item uk-logo logo_f uk-padding-remove-left" href="."><img src="imgs/logo.svg" alt=""/></a>
+							<Link className="uk-navbar-item uk-logo logo_f uk-padding-remove-left" to="/"><img src="imgs/logo.svg" alt=""/></Link>
 						</div>
 						<div className="uk-navbar-right">
 							<ul className="uk-navbar-nav uk-visible@m">

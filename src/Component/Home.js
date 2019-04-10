@@ -6,7 +6,7 @@ class Home extends Component {
 		return (
 			<div id="slider_home" className="uk-position-relative uk-visible-toggle" tabIndex="-1" uk-slideshow="animation: scale; autoplay: true; pause-on-hover: true;">
 
-				<ul className="uk-slideshow-items" uk-height-viewport="">
+				<ul className="uk-slideshow-items" uk-height-viewport="offset-top: true">
 					<li>
 						<div
 							className="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">

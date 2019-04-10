@@ -1,0 +1,58 @@
+#header{
+  background-color: rgba(255, 255, 255, 1);
+  width: 100% !important;
+  z-index: 1000;
+  & + .uk-sticky-placeholder{
+
+  }
+  &.uk-active{
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+  }
+  .uk-navbar-nav{
+    &.uk-visible\@m{
+      >li{
+        &:hover{
+          >a{
+            &:before{
+              right: 15px;
+            }
+          }
+        }
+        >a{
+          &.uk-open{
+            &:before{
+              right: 15px;
+            }
+          }
+        }
+      }
+    }
+    >li{
+      >a{
+        color: #333333;
+        font-size: 15px;
+        font-family:'SanFranciscoText-Regular';
+        position: relative;
+        @extend .uk-navbar-item;
+        &:before{
+          content: '';
+          display: block;
+          position: absolute;
+          left: 15px;
+          right: calc(102% - 15px);
+          bottom: 20px;
+          height: 2px;
+          background-color: #17479b;
+          transition: .3s ease-in-out;
+          transition-property: right;
+        }
+      }
+    }
+  }
+}
+.uk-navbar-item{
+  min-height: 75px;
+  .nav-overlay &{
+    min-height: 150px;
+  }
+}
