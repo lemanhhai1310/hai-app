@@ -127,7 +127,7 @@ class Nav extends Component {
 									</div>
 								</li>
 								<li>
-									<a href="#">liên hệ</a>
+									<Link to="/contact/">liên hệ</Link>
 									<div className="uk-navbar-dropdown uk-margin-remove uk-padding-remove" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 300">
 										<ul className="uk-nav uk-navbar-dropdown-nav">
 											<li><a href="#">Liên hệ EVNSPC</a></li>
