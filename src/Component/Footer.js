@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Footer extends Component {
 	render() {
@@ -12,34 +13,34 @@ class Footer extends Component {
 								<div className="uk-slider-container uk-light">
 									<ul className="uk-slider-items uk-text-center uk-flex-middle uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-5@l" uk-grid="">
 										<li>
-											<a href><img src="imgs/brand/CFE.png" alt /></a>
+											<a href=""><img src="imgs/brand/CFE.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/Kepco.png" alt /></a>
+											<a href=""><img src="imgs/brand/Kepco.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/aes%20dot%20com.png" alt /></a>
+											<a href=""><img src="imgs/brand/aes%20dot%20com.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/nepal.png" alt /></a>
+											<a href=""><img src="imgs/brand/nepal.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/tenaga.png" alt /></a>
+											<a href=""><img src="imgs/brand/tenaga.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/CFE.png" alt /></a>
+											<a href=""><img src="imgs/brand/CFE.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/Kepco.png" alt /></a>
+											<a href=""><img src="imgs/brand/Kepco.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/aes%20dot%20com.png" alt /></a>
+											<a href=""><img src="imgs/brand/aes%20dot%20com.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/nepal.png" alt /></a>
+											<a href=""><img src="imgs/brand/nepal.png" alt="" /></a>
 										</li>
 										<li>
-											<a href><img src="imgs/brand/tenaga.png" alt /></a>
+											<a href=""><img src="imgs/brand/tenaga.png" alt="" /></a>
 										</li>
 									</ul>
 								</div>
@@ -58,7 +59,7 @@ class Footer extends Component {
 						<div className="uk-flex-middle" uk-grid="">
 							<div className="uk-width-auto@l">
 								<figure className="logo_f uk-invisible uk-visible@l">
-									<a href="#"><img src="imgs/logo.svg" alt /></a>
+									<a href="#"><img src="imgs/logo.svg" alt="" /></a>
 								</figure>
 							</div>
 							<div className="uk-width-expand@l">
@@ -73,7 +74,7 @@ class Footer extends Component {
 							</div>
 							<div className="uk-width-auto@l">
 								<figure className="logo_f uk-invisible uk-visible@l">
-									<a href="#"><img src="imgs/logo.svg" alt /></a>
+									<a href="#"><img src="imgs/logo.svg" alt="" /></a>
 								</figure>
 							</div>
 						</div>
@@ -84,7 +85,7 @@ class Footer extends Component {
 						<div uk-grid="">
 							<div className="uk-width-auto@l">
 								<figure className="logo_f">
-									<a href="#"><img src="imgs/logo.svg" alt /></a>
+									<Link to="/"><img src="imgs/logo.svg" alt="" /></Link>
 								</figure>
 							</div>
 							<div className="uk-width-expand@l">
